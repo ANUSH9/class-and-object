@@ -75,8 +75,46 @@ namespace mobile
             {
                 Console.WriteLine("not a dog");
             }
+            cat cats = new cat();
+            Console.WriteLine(cats.colour());
+            Console.WriteLine(cats.OwnerName());
+            Console.WriteLine(cats.PetName());
+            Console.WriteLine(cats.age());
+        }
+    }
+    public interface Ianimals
+    {
+        string colour(); //by default abstract keyword
+        
+        string OwnerName();
+        int age();
 
-            
+
+    }
+    public interface Ipname
+    {
+        string PetName();
+    }
+    public class cat : Ianimals,Ipname
+    {
+        public string colour()
+        {
+            return "red";
+        }
+
+        public int age()
+        {
+            return 12;
+        }
+
+        public string OwnerName()
+        {
+            return "roky";
+        }
+
+        public string PetName()
+        {
+            return "ramukaka";
         }
     }
 }
