@@ -22,7 +22,7 @@ namespace work
                 
                 if (line != "")
                 {
-                    if (line.StartsWith("Date"))
+                    if (line.StartsWith("Id"))
                     {
                         string[] fine2 = line.Split(' ');
 
